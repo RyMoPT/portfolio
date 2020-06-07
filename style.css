@@ -17,18 +17,13 @@ body {
 
 h1 {
     font-size: 8rem;
+    padding-top: 1rem;
 }
 
 h2 {
     font-size: 2rem;
 }
 
-.projectItems {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content:space-between ;
-}
 
 .row {
     margin: auto;
@@ -60,10 +55,28 @@ h2 {
 }
 
 .styleB {
-    background-color: #e9ecef;
+    /* background-color: #e9ecef; */
+    background-color: #343a40;
+    color:rgba(255,255,255,.5);
 }
 
+.darkh2 {
+    color: #fff;
+}
 .progress {
     margin-bottom: 2rem;
     height: 2.5rem;
 }
+
+h3 {
+    padding-top: 0.5rem;
+}
+
+.projectItem {
+    padding: 2rem;
+}
+.projectItem:hover {
+    background-color: #e9ecef;
+    transition: 0.4s ease-in-out;
+}
+
