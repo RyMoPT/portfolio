@@ -12,11 +12,16 @@ body {
 
 .jumbotron {
     text-align: center;
+    color: #e9ecef;
     height: 100vh;
+    background-image: url(/assets/toronto2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
     font-size: 6rem;
+    color: #ffffff;
 }
 
 h2 {
