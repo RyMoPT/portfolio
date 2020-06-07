@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+.jumbotron {
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.projectItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content:space-between ;
+}
+
+.row {
+    margin: auto;
+}
+
+.projectsSection {
+    height: 100vh;
+}
+
+.socials {
+    margin-top: 2rem;
+    text-align: center;
+    /* font-size: 4rem; */
+}
+
+.test {
+    height: 100vh;
+}
+
+.pattern1 {
+    background-color: #333333;
+}
+
+@media (max-width: 576px) { 
+    .socialsList {
+        display: flex;
+        flex-direction: column;
+    } 
+}
