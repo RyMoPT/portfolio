@@ -16,12 +16,11 @@ body {
 }
 
 h1 {
-    font-size: 8rem;
-    padding-top: 1rem;
+    font-size: 6rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 
@@ -34,7 +33,7 @@ h2 {
 }
 
 .socials {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
     /* font-size: 4rem; */
 }
@@ -43,15 +42,31 @@ h2 {
     height: 100vh;
 }
 
-.pattern1 {
-    background-color: #333333;
-}
 
 @media (max-width: 576px) { 
     .socialsList {
         display: flex;
         flex-direction: column;
     } 
+    h1 {
+        font-size: 4rem;
+        padding-top: 2rem;
+    }
+    h2 {
+        text-align: center;
+    }
+    .socials {
+        margin-top: 1.5rem;
+    }
+    .img-school{
+        padding-bottom: 1.5rem;
+    }
+    .educationTitle {
+        text-align: center;
+    }
+    .educationRow{
+        text-align: center;
+    }
 }
 
 .styleB {
@@ -62,6 +77,8 @@ h2 {
 
 .darkh2 {
     color: #fff;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
 }
 .progress {
     margin-bottom: 2rem;
@@ -78,5 +95,32 @@ h3 {
 .projectItem:hover {
     background-color: #e9ecef;
     transition: 0.4s ease-in-out;
+}
+
+.profilepic {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 50%;
+        border: 4px solid #343a40;
+        vertical-align: middle;
+        margin: 0.5rem;
+}
+
+.about, .projects, .skills, .education {
+    font-size: 1.2rem;
+}
+
+.img-school {
+    width: 100%;
+    max-width: 200px;
+}
+
+.educationRow {
+    padding: 1rem
+}
+
+.copyright {
+    text-align: center;
+    margin: 0;
 }
 
