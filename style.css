@@ -58,3 +58,12 @@ h2 {
         flex-direction: column;
     } 
 }
+
+.styleB {
+    background-color: #e9ecef;
+}
+
+.progress {
+    margin-bottom: 2rem;
+    height: 2.5rem;
+}
