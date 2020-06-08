@@ -22,6 +22,7 @@ body {
     background-image: url('./assets/toronto2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
 }
 
 h1 {
