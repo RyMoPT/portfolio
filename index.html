@@ -76,13 +76,16 @@
 
     <h2>Projects</h2>
     <br>
+    <div class="projectsContainer"></div>
+    <br>
+    <br>
     <div class="container-fluid text-center">    
       <div class="row">
         <div class="col-sm-6 mx-auto projectItem">
           <!-- <a href="https://rymopt.github.io/weatherappreact/"><img src="assets/weatherapp.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a> -->
           <a href="https://rymopt.github.io/weatherappreact/">
             <video class="img-responsive-margin" loop onmouseover="this.play()" onmouseout="this.pause();" loop="" preload="" width="100%" height="auto">
-              <source src="assets/weatherapp.mkv">
+              <source src="assets/weatherapp.mov">
         </video>          
       </a>
           <h3>Weather App</h3>
@@ -93,7 +96,7 @@
         <div class="col-sm-6 mx-auto projectItem"> 
           <a href="https://rymopt.github.io/todoreact/">
             <video class="img-responsive-margin" loop onmouseover="this.play()" onmouseout="this.pause();" loop="" preload="" width="100%" height="auto">
-              <source src="assets/todovid.mkv">
+              <source src="assets/todovid.mov">
         </video>          
           </a>
           <h3>To-Do List</h3>
@@ -104,7 +107,7 @@
         <div class="col-sm-6 mx-auto projectItem"> 
           <a href="https://chrome.google.com/webstore/detail/goniometer/bgohdobpmnajfkhonaimnelpglcplhei">
             <video class="img-responsive-margin" loop onmouseover="this.play()" onmouseout="this.pause();" loop="" preload="" width="100%" height="auto">
-              <source src="assets/goniometervid.mkv">
+              <source src="assets/goniometervid.mov">
         </video>           </a>
           <h3>Virtual Goniometer</h3>
           <p>This virtual goniometer is an easy to use tool for clinicians to measure angles 
@@ -116,7 +119,7 @@
         <div class="col-sm-6 mx-auto projectItem"> 
           <a href="https://rymopt.github.io/5in7/">
             <video class="img-responsive-margin" loop muted onmouseover="this.play()" onmouseout="this.pause();" loop="" preload="" width="100%" height="auto">
-              <source src="assets/5in7vid.mkv">
+              <source src="assets/5in7vid.mov">
         </video>     
                 </a>
           <h3>5 in 7</h3>
@@ -341,6 +344,22 @@
        AOS.init();
      </script>
 
+<script>
+        var mediaQuery = window.matchMedia("(max-width: 768px)")
+        let videoArray = document.querySelectorAll('video');
+        // let projectsDiv = document.querySelector('.projectsContainer')
+        // let projectsInstruction = document.createElement('div');
+
+        if (mediaQuery.matches) {
+          for (let i = 0; i < videoArray.length; i++) {
+            videoArray[i].autoplay=true;
+          }
+        // projectsInstruction.innerText = 'Mouse over each image to see the project in action';
+        // projectsDiv.appendChild(projectsInstruction);
+        }
+
+
+</script>
 
   </body>
 </html>
