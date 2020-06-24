@@ -76,15 +76,18 @@
 
     <h2>Projects</h2>
     <br>
-    <div class="projectsContainer"></div>
-    <br>
+    <div class="projectsContainer">
+      <div class="projectsInstruction">
+        <p>Mouse over each image to see each project in action.</p>
+      </div>
+    </div>
     <br>
     <div class="container-fluid text-center">    
       <div class="row">
         <div class="col-sm-6 mx-auto projectItem">
           <!-- <a href="https://rymopt.github.io/weatherappreact/"><img src="assets/weatherapp.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a> -->
           <a href="https://rymopt.github.io/weatherappreact/">
-            <video class="img-responsive-margin" loop onmouseover="this.play()" onmouseout="this.pause();" loop="" preload="" width="100%" height="auto">
+            <video class="img-responsive-margin" loop muted onmouseover="this.play()" onmouseout="this.pause();" loop="" preload="" width="100%" height="auto">
               <source src="assets/weatherapp.mov">
         </video>          
       </a>
@@ -95,7 +98,7 @@
         </div>
         <div class="col-sm-6 mx-auto projectItem"> 
           <a href="https://rymopt.github.io/todoreact/">
-            <video class="img-responsive-margin" loop onmouseover="this.play()" onmouseout="this.pause();" loop="" preload="" width="100%" height="auto">
+            <video class="img-responsive-margin" loop muted onmouseover="this.play()" onmouseout="this.pause();" loop="" preload="" width="100%" height="auto">
               <source src="assets/todovid.mov">
         </video>          
           </a>
@@ -106,7 +109,7 @@
         </div>
         <div class="col-sm-6 mx-auto projectItem"> 
           <a href="https://chrome.google.com/webstore/detail/goniometer/bgohdobpmnajfkhonaimnelpglcplhei">
-            <video class="img-responsive-margin" loop onmouseover="this.play()" onmouseout="this.pause();" loop="" preload="" width="100%" height="auto">
+            <video class="img-responsive-margin" loop muted onmouseover="this.play()" onmouseout="this.pause();" loop="" preload="" width="100%" height="auto">
               <source src="assets/goniometervid.mov">
         </video>           </a>
           <h3>Virtual Goniometer</h3>
@@ -347,15 +350,15 @@
 <script>
         var mediaQuery = window.matchMedia("(max-width: 768px)")
         let videoArray = document.querySelectorAll('video');
-        // let projectsDiv = document.querySelector('.projectsContainer')
-        // let projectsInstruction = document.createElement('div');
+        let projectsDiv = document.querySelector('.projectsContainer')
+        let projectsInstruction = document.querySelector('.projectsInstruction')
+
 
         if (mediaQuery.matches) {
           for (let i = 0; i < videoArray.length; i++) {
             videoArray[i].autoplay=true;
           }
-        // projectsInstruction.innerText = 'Mouse over each image to see the project in action';
-        // projectsDiv.appendChild(projectsInstruction);
+        projectsDiv.removeChild(projectsInstruction);
         }
 
 
