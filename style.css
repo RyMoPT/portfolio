@@ -68,6 +68,10 @@ h2 {
     }
     .socials {
         margin-top: 1.5rem;
+        display: block;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 1.5rem;
     }
     .img-school{
         padding-bottom: 1.5rem;
@@ -77,6 +81,9 @@ h2 {
     }
     .educationRow{
         text-align: center;
+    }
+    .list-inline-item:not(:last-child){
+        margin-right: 0;
     }
 }
 
@@ -138,3 +145,11 @@ h3 {
 .last {
     padding-bottom: 3rem;
 }
+
+.mobileBtns {
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+

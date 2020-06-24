@@ -352,6 +352,7 @@
         let videoArray = document.querySelectorAll('video');
         let projectsDiv = document.querySelector('.projectsContainer')
         let projectsInstruction = document.querySelector('.projectsInstruction')
+        let btnsArray = document.querySelectorAll('.btn')
 
 
         if (mediaQuery.matches) {
@@ -359,9 +360,11 @@
             videoArray[i].autoplay=true;
           }
         projectsDiv.removeChild(projectsInstruction);
+
+        // for (let index = 0; index < btnsArray.length; index++) {
+        //   btnsArray[index].classList.add('mobileBtns')
+        // }
         }
-
-
 </script>
 
   </body>
