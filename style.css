@@ -17,8 +17,8 @@ body {
 .jumbotron {
     text-align: center;
     color: #e9ecef;
-    /* height: 100vh; */
-    min-height: 100%;
+    min-height: 100vh;
+    /* min-height: 100%; */
     background-image: url('./assets/toronto2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,6 +53,12 @@ h2 {
     height: 100vh;
 }
 
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (max-width: 576px) { 
     .socialsList {
